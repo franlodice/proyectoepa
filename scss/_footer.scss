@@ -1,0 +1,47 @@
+footer {
+    background: linear-gradient(-45deg, #e7e169, #E1E90D, #f0f089);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+	width: 100%;
+	margin: 0rem 0rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	.redesNav {
+		padding: 0rem 0rem;
+		a {
+			img {
+				width: 20px;
+				height: 20px;
+				padding: 0rem 0.05rem;
+				margin-left: 0.2rem;
+			}
+		}
+	}
+    .logoFooter {
+        width: 70px;
+        height: 90px;
+    }
+    p {
+        color: #442461;
+        padding: 0rem 1rem;
+        font-weight: 200;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        text-align: center;
+    }
+}

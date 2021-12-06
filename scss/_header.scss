@@ -1,0 +1,65 @@
+header { 
+    nav {
+        font-size: 1.5rem;
+        .logoNav {
+            width: 100px;
+            height: 40px;
+        }
+    }
+    
+}
+.zoomMenu {
+	transition: all 0.1s;
+	&:hover {
+		transform: scale(1.05,1.05);
+	}
+}
+.textoMenu {
+    color: white;
+}
+
+.container-fluid {
+    margin-left: 0px;
+}
+
+  /* AREA BANNER PRINCIPAL */
+  .bannerPrincipal {
+    margin-top: -6rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    padding-left: 0px;
+
+
+    video {
+        /*position: absolute;*/
+        top: 0%;
+        z-index: -20;
+        width: (101%);
+        height: auto;
+        visibility: visible;
+        margin-left: -15px;
+        padding-left: 0px;
+    }
+
+    .textoBanner {
+        position: absolute;
+        top: 40rem;
+        max-width: (65.5rem);
+        flex-wrap: wrap;
+        margin-left: 70px;
+        /*margin-top: 150px;*/
+        h1 {
+            color: white;
+            font-weight: 900;
+            font-size: 6rem;
+            letter-spacing: 1px;
+        }
+        p {
+            color:white;
+            font-size: 2rem;
+            width: 100%;
+            line-height: 20px;
+        }
+    }
+}

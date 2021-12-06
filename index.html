@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Epa Remesa. Ayuda a tu familia en Venezuela de la formas más rápida y segura">
+        <meta name="keywords" content="Remesa, Exchange, Cambio, Venezuela, Familia, Bolívares">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Epa Remesa - Mas Dinero Menos Estrés</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="img/epaamarillo_simple.svg" alt="Logotipo FranLodice" class="logoNav zoomMenu"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#areaCalculadora">Calculadora</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#somosEPA">Somos EPA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+
+        <!-- MODAL DE INICIO - PROMOCION -->
+        <div class="modal fade" id="inicioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Diciembre de beneficios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/banner01.png" alt="Banner Promo">
+                </div>
+            </div>
+            </div>                                
+        </div>
+
+        <!-- AREA DE TITULO Y TEXTO PRINCIPAL -->
+        <div class="container-fluid"> 
+            <div class="row">
+                <section class="bannerPrincipal">
+                    <video loop autoplay preload muted class="d-block d-xxl-block d-xl-block">
+                        <source src="img/videoBanner01.mp4"/>
+                    </video>
+                
+                    <div class="textoBanner col-6">
+                        <h1 class="animate__animated animate__fadeInDown">TRANSACCIONES RÁPIDAS Y SEGURAS</h1>
+                        <p class= "animate__animated animate__fadeInLeft">Ayuda a tu familia en Venezuela de la formas más segura. Más Dinero Menos Estrés.</p>
+                        <button id="botonBanner">
+                            <a href="#areaCalculadora">COTIZAR</a>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        
+
+        <!-- AREA CALCULADORA -->
+            <div class="row">
+            <div id="areaCalculadora" class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>REALIZA UNA TRANSACCIÓN</h2>
+                    </div>
+                </div>
+                <!-- FORMULARIO -->
+                <div class="container formulario">
+                    <div class="py-5 text-center">
+                        <p class="lead">¡Rápido y seguro! Ingresa los datos de las transacciones que deseas realizar y calcula cuántos bolívares vas a recibir.</p>
+                    </div>
+                        <div class="row 6 g-5">
+                            <div class="col-md-5 col-lg-4 order-last">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary">Transacciones Registradas</span>
+                                    <span id="totalTransacciones" class="badge bg-primary rounded-pill"></span>
+                                </h4>
+                                <div id="lista">
+
+                                </div>
+
+                                <form class="card p-2">
+                                    <div class="input-group">
+                                        <input type="text" id="tuNombre" class="form-control textoSecundario" placeholder="Tu nombre">
+                                        <button type="button" class="btn btn-secondary">
+                                            <a id="botonProcesar">Procesar Cambio</a>
+                                        </button>
+                                    </div>
+                                </form>
+                        </div>
+                            <div id="paso1" class="col-md-7 col-lg-8">
+                                <h6 id="textoTasa" class="mb-3"></h6>
+                                <form id="formCalculadora" class="needs-validation" novalidate>
+                                    <div class="row g-3">
+
+                                        <div class="col-sm-6">
+                                            <label for="monto" class="form-label textoSecundario">Monto en Pesos</label>
+                                            <input type="text" class="form-control" id="pesos" placeholder="0,00" required>
+                                        </div>
+
+
+                                        <div class="col-sm-6">
+                                            <label for="banco" class="form-label textoSecundario">Banco de Destino</label>
+                                            <select class="form-select" id="banco" required>
+                                                <option value="">Elige...</option>
+                                                <option>Banesco</option>
+                                                <option>Mercantil</option>
+                                            </select>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="w-100 btn btn-primary btn-lg" id="botonModal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Calcular
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transacción</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div id="pasoDos" class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary textoBoton" data-bs-dismiss="modal">Cancelar</button>
+                                                <button id="botonConfirm" type="button" class="btn btn-primary textoBoton" data-bs-dismiss="modal">Confirmar</button>
+                                                </div>
+                                            </div>
+                                            </div>                                
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- CONTENIDO - SOMOS EPA -->
+        <div id="somosEPA" class="row">
+            <div class="container-fluid ventajasCards"> 
+                <div class="card-group">
+                    <div class="card">
+                    <img src="img/foto05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title subtitulo">RAPIDEZ</h5>
+                        <p class="card-text">En EPA! nos esforzamos día a día para ofrecerte las operaciones más rápidas posibles para que tu familia reciba su cambio en instantes. Nuestro equipo de soporte está listo para atenderte.</p>
+                    </div>
+                    </div>
+                
+                    <div class="card">
+                    <img src="img/foto04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title subtitulo">SIN LÍMITES</h5>
+                        <p class="card-text">Puedes realizar el cambio que necesites, sin límites mínimos ni máximos. Queremos seguir siendo esa mano amiga con la que puedes contar para ayudar a tu familia desde cualquier parte del mundo.</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/foto01.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title subtitulo">SEGURIDAD</h5>
+                            <p class="card-text">Cuidamos cada centavo de tu cambio porque entendemos el sacrificio que implica cada centavo que envías a tu familia.</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row">
+        <footer class="container-fluid border-top">
+            <div>
+                <img src="img/epamorado.svg" alt="Logotipo Epa" class="logoFooter">
+            </div>
+    
+            <div>
+                <p> ©  2021 -   Epa Remesa -    Diseño y Desarrollo Francisco Gutierrez</p>
+            </div>
+    
+            <div class="redesNav">
+                <a href="https://instagram.com/franlodice" target="_blank">
+                    <img src="img/logo_ig.svg" alt="Instagram" class="zoomMenu">
+                </a>
+                <a href="https://twitter.com/franlodice" target="_blank">
+                    <img src="img/logo_tw.svg" alt="Twitter" class="zoomMenu">
+                </a>
+                <a href="https://linkedin.com/in/franlodice" target="_blank">
+                    <img src="img/logo_ink.svg" alt="Linkedin" class="zoomMenu">
+                </a>
+            </div>
+    
+        </footer>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/funciones.js"></script>
+    </body>
+</html>

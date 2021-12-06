@@ -1,0 +1,94 @@
+/* -------------------RESPONSIVE - Hasta 1400px ------------------------ */
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+    .bannerPrincipal {
+        .textoBanner {
+            top: 30rem;
+            h1 {
+                color: white;
+            }
+        }
+    }
+}
+
+/* -------------------RESPONSIVE - Hasta 1200px ------------------------ */
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .bannerPrincipal {
+        .textoBanner {
+            top: 20rem;
+            h1 {
+                color: white;
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+/* -------------------RESPONSIVE - Hasta 768px ------------------------ */
+@media only screen and (max-width: 767px) and (min-width: 577px) {
+    html {
+        font-size: 47%;
+    }
+    .bannerPrincipal {
+        video {
+            width: 103%;
+        }
+        .textoBanner {
+            top: 16rem;
+            h1 {
+                color: white;
+                font-size: 2.8rem;
+            }
+            p {
+                width: 90%;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+/* -------------------RESPONSIVE - Hasta 576px ------------------------ */
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+    .bannerPrincipal {
+        margin-top: -10rem;
+
+        video {
+            width: 108%;
+        }
+        .textoBanner {
+            top: 10rem;
+            margin-left: 5rem;
+            h1 {
+                color: white;
+                font-size: 2rem;
+            }
+            p {
+                width: 85%;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+
+            button {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    #areaCalculadora {
+        h2 {
+        font-size: 2.5rem;
+        width: 105%;
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+@import "botones.scss";
+@import "calculadora.scss";
+@import "footer.scss";
+@import "contenido.scss";
+@import "estructura.scss";
+@import "header.scss";
+@import "responsive.scss";
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    margin-left: 0px;
+}

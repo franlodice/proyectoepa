@@ -1,0 +1,109 @@
+  /* AREA CALCULADORA */
+  #areaCalculadora {
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*margin-top: 45rem;*/
+    
+    .formulario {
+        width: 90%;
+        margin-bottom: 50px;
+
+        .lead {
+            font-size: 2rem;
+        }
+
+        .text-primary {
+            color: purple !important;;
+            font-size: 2.5rem;
+        }
+        .bg-primary {
+            background-color: rgb(118, 87, 148) !important;
+            font-size: 1.5rem;
+        }
+        .listado {
+            h6 {
+                font-size: 1.8rem;
+            }
+        }
+        .detalles {
+            font-size: 1.2rem !important;
+        }
+        .textoSecundario {
+            font-size: 1.8rem; 
+        }
+        .form-control {
+            font-size: 1.8rem;
+        }
+        h6{
+            font-size: 2rem;
+        }
+        #botonModal {
+            font-size: 2rem;
+        }
+
+        #pasoDos {
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        .textoBoton{
+            font-size: 1.5rem;
+        } 
+            
+
+
+    
+    
+    #pesos {
+        height: 8rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px, #442461;
+        color: #442461;
+        font-size: 8rem;
+        text-align: right;
+    }
+
+    #banco{
+        height: 8rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px, #442461;
+        color: #442461;
+        font-size: 3rem;
+    }
+    }
+
+
+    h2 {
+        color: white;
+        background: linear-gradient(-45deg, #602262, #CB78E7, #4B0264, #410255);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        font-weight: 700;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+        height: 4.2rem;
+    }
+}
